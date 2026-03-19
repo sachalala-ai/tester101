@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI &amp; Data Policy — Marloo Trust Centre</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">Marloo</div>
+      <nav>
+        <a href="index.html">Trust Centre</a>
+        <a href="ai-policy.html" class="active">AI Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Trust Centre</a> / AI &amp; Data Policy</div>
+        <h1>AI &amp; Data Policy</h1>
+        <p class="page-meta">For UK Financial Advisers &nbsp;·&nbsp; Last updated: March 2026</p>
+      </div>
+    </section>
+
+    <section class="policy-layout">
+      <div class="container">
+
+        <aside class="toc">
+          <p class="toc-title">On this page</p>
+          <ul>
+            <li><a href="#short-version">The short version</a></li>
+            <li><a href="#models">Which AI models we use</a></li>
+            <li><a href="#training">Will AI train on client data?</a></li>
+            <li><a href="#transcription">Who transcribes meetings?</a></li>
+            <li><a href="#processing-location">Where AI processing happens</a></li>
+            <li><a href="#data-sent">What data is sent to AI?</a></li>
+            <li><a href="#obligations">Your obligations</a></li>
+            <li><a href="#sub-processors">Sub-processors</a></li>
+            <li><a href="#questions">Questions</a></li>
+          </ul>
+        </aside>
+
+        <article class="policy-content">
+
+          <div class="summary-box" id="short-version">
+            <h2>The short version</h2>
+            <p>Marloo uses AI to help you work faster. Your client data is never used to train AI models. The AI processes your data in real time and discards it immediately. You remain in control.</p>
+          </div>
+
+          <section id="models">
+            <h2>Which AI models does Marloo use?</h2>
+            <p>Marloo uses two AI providers to power its features:</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Provider</th>
+                  <th>What it does</th>
+                  <th>Data retained?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Anthropic (Claude)</td>
+                  <td>Meeting summaries, document analysis, advice notes</td>
+                  <td><span class="tag tag--green">No — zero data retention</span></td>
+                </tr>
+                <tr>
+                  <td>OpenAI (GPT)</td>
+                  <td>Supporting AI features</td>
+                  <td><span class="tag tag--green">No — zero data retention</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <p>Both providers operate under <strong>Zero Data Retention (ZDR) enterprise agreements</strong> with Marloo. This means:</p>
+            <ul>
+              <li>Your data is sent to the model to generate a response</li>
+              <li>The moment the response is returned, the data is discarded</li>
+              <li>It is never stored, logged, or used for training</li>
+            </ul>
+          </section>
+
+          <section id="training">
+            <h2>Will AI models train on my client data?</h2>
+            <p><strong>No.</strong> This is the most important question financial advisers ask us, and the answer is unambiguous.</p>
+            <p>Anthropic and OpenAI are contractually prohibited from using any data processed through Marloo's enterprise API to train their models. This applies to:</p>
+            <ul>
+              <li>Meeting transcripts</li>
+              <li>Client documents you upload</li>
+              <li>Advice notes and summaries</li>
+              <li>Any other content processed through Marloo</li>
+            </ul>
+            <p>The ZDR agreements are a core part of our enterprise contracts with both providers — not an optional setting.</p>
+          </section>
+
+          <section id="transcription">
+            <h2>Who transcribes my meetings?</h2>
+            <p>Meeting recordings are transcribed using <strong>AssemblyAI</strong>. Transcription data is processed in real time and is not retained by AssemblyAI beyond the immediate processing window.</p>
+            <p>Meeting bots that join your calls are powered by <strong>Recall</strong>. Recall captures the audio/video stream for the purpose of transcription only.</p>
+            <p>Both AssemblyAI and Recall are bound by data processing agreements with Marloo and do not retain or use your data for any purpose beyond transcription.</p>
+          </section>
+
+          <section id="processing-location">
+            <h2>Where does AI processing happen?</h2>
+            <p>AI inference (the moment your data is sent to a model and a response is generated) takes place on servers operated by Anthropic and OpenAI, which are based in the <strong>United States</strong>.</p>
+            <p>This constitutes an international data transfer under UK GDPR. Marloo manages this lawfully through <strong>Standard Contractual Clauses (SCCs)</strong> with both providers, supplemented by the UK Extension to the EU-U.S. Data Privacy Framework.</p>
+          </section>
+
+          <section id="data-sent">
+            <h2>What data is sent to AI models?</h2>
+            <p>Only the data needed to generate the output you've requested is sent. For example:</p>
+            <ul>
+              <li>When generating a meeting summary → the transcript of that meeting</li>
+              <li>When analysing a document → the content of that document</li>
+              <li>When drafting an advice note → the relevant meeting and client context you provide</li>
+            </ul>
+            <p>Marloo does not send data to AI models in the background or for purposes beyond generating your requested output.</p>
+          </section>
+
+          <section id="obligations">
+            <h2>Your obligations as a data controller</h2>
+            <p>Under UK GDPR, your firm is the <strong>data controller</strong> for your clients' personal data. Marloo acts as your <strong>data processor</strong>.</p>
+            <p>This means:</p>
+            <ul>
+              <li>You are responsible for ensuring you have a lawful basis to share client data with Marloo (typically legitimate interests or client consent)</li>
+              <li>You should inform clients that their meeting data may be processed by an AI tool</li>
+              <li>Signing Marloo's Data Processing Agreement (DPA) satisfies your Article 28 UK GDPR obligation for a controller-to-processor agreement</li>
+            </ul>
+            <p>If you need support with client disclosure language, contact <a href="mailto:compliance@gomarloo.com">compliance@gomarloo.com</a>.</p>
+          </section>
+
+          <section id="sub-processors">
+            <h2>Summary of AI sub-processors</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Sub-processor</th>
+                  <th>Purpose</th>
+                  <th>Data location</th>
+                  <th>Retention</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Anthropic</td>
+                  <td>AI inference (Claude)</td>
+                  <td>United States</td>
+                  <td><span class="tag tag--green">Zero</span></td>
+                </tr>
+                <tr>
+                  <td>OpenAI</td>
+                  <td>AI inference (GPT)</td>
+                  <td>United States</td>
+                  <td><span class="tag tag--green">Zero</span></td>
+                </tr>
+                <tr>
+                  <td>AssemblyAI</td>
+                  <td>Meeting transcription</td>
+                  <td>United States</td>
+                  <td><span class="tag tag--green">Zero</span></td>
+                </tr>
+                <tr>
+                  <td>Recall</td>
+                  <td>Meeting bot / audio capture</td>
+                  <td>United States</td>
+                  <td><span class="tag tag--green">Zero</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section id="questions">
+            <h2>Questions?</h2>
+            <p>For any questions about how Marloo uses AI to process your data:</p>
+            <ul>
+              <li><strong>Email:</strong> <a href="mailto:compliance@gomarloo.com">compliance@gomarloo.com</a></li>
+              <li><strong>Data Protection Officer (UK/EEA):</strong> Hardy Michel</li>
+              <li><strong>UK Privacy Representative:</strong> Prighter Group</li>
+            </ul>
+            <p>To request a copy of our DPA or ZDR contract clauses, contact <a href="mailto:compliance@gomarloo.com">compliance@gomarloo.com</a>.</p>
+          </section>
+
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Marloo. All rights reserved.</p>
+      <p class="footer-sub">Marloo is a trading name of [Company Ltd], registered in England &amp; Wales.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
